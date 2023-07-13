@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Reindeer</title>
+</head>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Reindeer</h1>
+        <span>Snow Life</span>
+    </div>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <h1>
+                    <span>rein <br> deer</span>
+                    <br>
+                    Snow Life
+                </h1>
+            </div>
+            <div class="menu-link">
+                <ul>
+                    <li>Home</li>
+                    <li>Snow Life</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="scrolldown">Scroll</div>
+        </div>
+        <div class="text">
+            <div class="title">
+                Reindeer
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Corrupti libero nam sunt explicabo facere! Dolorem velit sed quam aspernatur.</p>
+        </div>
+        <div class="media">
+            <ul>
+                <li><i class="ri-facebook-line"></i></li>
+                <li><i class="ri-twitter-fill"></i></li>
+                <li><i class="ri-instagram-line"></i></li>
+            </ul>
+        </div>
+        <div class="ellipse-container">
+            <div class="ellipse thin"></div>
+            <div class="ellipse thick"></div>
+            <div class="ellipse yellow"></div>
+            <div class="circle1"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="circle2"><span>Lorem ipsum dolor sit.</span></div>
+        </div>
+    </div>
+    <script>
+        TweenMax.to(".overlay h1", 2, {
+      opacity: 0,
+      y: -60,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay span", 2, {
+      delay: .3,
+      opacity: 0,
+      y: -60,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay", 2, {
+      delay: 1,
+      top: "-100%",
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".ellipse-container", 1, {
+      delay: 2,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".yellow", 1, {
+      delay: 3.5,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".circle1", 1, {
+      delay: 2.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".circle2", 1, {
+      delay: 2.6,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".logo", 1, {
+      delay: 3,
+      opacity: 0,
+      y: -100,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".menu-links ul li", 1, {
+      delay: 3.2,
+      opacity: 0,
+      x: -100,
+      ease: Expo.easeInOut
+    }, 0.08)
+
+    TweenMax.from(".scrolldown", 1, {
+      delay: 3.4,
+      opacity: 0,
+      y: 100,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".text .title", 1, {
+      delay: 3,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".text p", 1, {
+      delay: 3.2,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".watchnow", 1, {
+      delay: 3.4,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".media ul li", 1, {
+      delay: 3,
+      opacity: 0,
+      y: 100,
+      ease: Expo.easeInOut
+    }, 0.08)
+    </script>
+</body>
+</html>
